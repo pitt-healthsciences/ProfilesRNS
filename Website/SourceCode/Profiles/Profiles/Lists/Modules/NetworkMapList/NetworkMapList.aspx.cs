@@ -77,6 +77,13 @@ namespace Profiles.Lists.Modules.NetworkMapList
             Displaycss.Attributes["media"] = "all";
             Page.Header.Controls.Add(Displaycss);
 
+            HtmlLink PRNSthemePitt = new HtmlLink();
+            PRNSthemePitt.Href = Root.Domain + "/framework/css/profiles-pitt.css";
+            PRNSthemePitt.Attributes["rel"] = "stylesheet";
+            PRNSthemePitt.Attributes["type"] = "text/css";
+            PRNSthemePitt.Attributes["media"] = "all";
+            Page.Header.Controls.Add(PRNSthemePitt);
+
 
 
         }

@@ -16,6 +16,8 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 using Profiles.Framework.Utilities;
+using System.DirectoryServices.AccountManagement;
+using System.DirectoryServices;
 
 namespace Profiles.Login.Utilities
 {
@@ -96,6 +98,7 @@ namespace Profiles.Login.Utilities
         public bool UserLoginExternal(ref User user)
         {
             bool loginsuccess = false;
+            String internalusername = LookupEmployeeNumber(user);
 
             try
             {
@@ -108,7 +111,7 @@ namespace Profiles.Login.Utilities
 
                 dbconnection.Open();
 
-                param[0] = new SqlParameter("@UserName", user.UserName);
+                param[0] = new SqlParameter("@UserName", internalusername);
 
                 param[1] = new SqlParameter("@UserID", null);
                 param[1].DbType = DbType.Int32;
@@ -169,6 +172,26 @@ namespace Profiles.Login.Utilities
 
 
         #endregion
+
+
+
+        private String LookupEmployeeNumber(User user)
+        {
+            String adDomain = ConfigurationSettings.AppSettings["AD.Domain"];
+            if (null != adDomain)
+            {
+                using (var pc = new PrincipalContext(ContextType.Domain, adDomain, user.UserName, user.Password))
+                {
+                    UserPrincipal x = UserPrincipal.FindByIdentity(pc, IdentityType.SamAccountName, "PITT\\" + user.UserName);
+                    User result = new User();
+                    return ((DirectoryEntry)x.GetUnderlyingObject()).InvokeGet("employeeNumber").ToString();
+                }
+            } 
+            else
+            {
+                return null;
+            }
+        }
 
 
     }

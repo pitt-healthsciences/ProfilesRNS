@@ -48,8 +48,9 @@
                                     <td>
                                        
                                     </td>
-                                    <td> <asp:ImageButton ImageUrl="~/login/images/loginButton.jpg" runat="server" ID="cmdSubmit"
-                                            Text="Login" OnClick="cmdSubmit_Click" alternatetext="Login"/>
+                                    <td> <%-- <asp:ImageButton ImageUrl="~/login/images/loginButton.jpg" runat="server" ID="cmdSubmit"
+                                            Text="Login" OnClick="cmdSubmit_Click" alternatetext="Login"/> --%>
+                                        <asp:Button ID="cmdSubmit" runat="server" Text="Login" OnClick="cmdSubmit_Click" class="login-button"/>
                                     </td>
                                 </tr>
                                 <tr>

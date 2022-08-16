@@ -1,0 +1,6 @@
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Utility\bin\QA\Connects.Profiles.Utility.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Utility\bin\QA\Connects.Profiles.Utility.pdb
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Utility\obj\QA\Connects.Profiles.Utility.csproj.AssemblyReference.cache
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Utility\obj\QA\Connects.Profiles.Utility.csproj.CoreCompileInputs.cache
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Utility\obj\QA\Connects.Profiles.Utility.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Utility\obj\QA\Connects.Profiles.Utility.pdb

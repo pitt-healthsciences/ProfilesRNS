@@ -1,0 +1,14 @@
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.ServiceImplementation.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.ServiceImplementation.pdb
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.DataContracts.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.ServiceContracts.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Utility.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Utility.pdb
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.DataContracts.pdb
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.ServiceContracts.pdb
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\bin\QA\Connects.Profiles.Service.ServiceContracts.dll.config
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\obj\QA\Connects.Profiles.Service.ServiceImplementation.csproj.AssemblyReference.cache
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\obj\QA\Connects.Profiles.Service.ServiceImplementation.csproj.CoreCompileInputs.cache
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\obj\QA\Connects.Profiles.Service.ServiceImplementation.csproj.CopyComplete
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\obj\QA\Connects.Profiles.Service.ServiceImplementation.dll
+D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.ServiceImplementation\obj\QA\Connects.Profiles.Service.ServiceImplementation.pdb

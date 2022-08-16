@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Xml;
 using System.Web.UI.HtmlControls;
 using Profiles.Framework.Utilities;
+using System.Configuration;
 
 namespace Profiles.Framework
 {
@@ -112,6 +113,15 @@ namespace Profiles.Framework
             PRNSthemeMenusTop.Attributes["type"] = "text/css";
             PRNSthemeMenusTop.Attributes["media"] = "all";
             head.Controls.Add(PRNSthemeMenusTop);
+
+
+            HtmlLink PRNSthemePitt = new HtmlLink();
+            PRNSthemePitt.Href = Root.Domain + "/framework/css/profiles-pitt.css";
+            PRNSthemePitt.Attributes["rel"] = "stylesheet";
+            PRNSthemePitt.Attributes["type"] = "text/css";
+            PRNSthemePitt.Attributes["media"] = "all";
+            head.Controls.Add(PRNSthemePitt);
+
 
             Framework.Utilities.DataIO data = new DataIO();
 /*
@@ -490,6 +500,22 @@ namespace Profiles.Framework
         public string GetURLDomain()
         {
             return Root.Domain;
+        }
+
+        public string GetVersion()
+        {
+            return "3.1.0";
+        }
+
+        public String GetMatomoURL()
+        {
+            return ConfigurationManager.AppSettings["Matomo.URL"];
+        }
+
+        public Int32 GetMatomoSiteID()
+        {
+            string siteID = ConfigurationManager.AppSettings["Matomo.SiteID"];
+            return Int32.TryParse(siteID, out int value) ? value : -1;
         }
 
         #region "Public Properties"

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Profiles.Login.Modules.ADLogin {
-    
-    
-    public partial class ADLogin {
-        
+namespace Profiles.Login.Modules.ADLogin
+{
+
+
+    public partial class ADLogin
+    {
+
         /// <summary>
         /// txtUserName control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Profiles.Login.Modules.ADLogin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
-        
+
         /// <summary>
         /// txtPassword control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Profiles.Login.Modules.ADLogin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
-        
+
         /// <summary>
         /// cmdSubmit control.
         /// </summary>
@@ -37,8 +39,8 @@ namespace Profiles.Login.Modules.ADLogin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton cmdSubmit;
-        
+        protected global::System.Web.UI.WebControls.Button cmdSubmit;
+
         /// <summary>
         /// lblError control.
         /// </summary>

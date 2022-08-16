@@ -94,3 +94,17 @@ UpgradeLog.XML
 /Website/SourceCode/ProfilesDataAPI/Views
 /Website/SourceCode/ProfilesDataAPI/Web.Debug.config
 /Website/SourceCode/ProfilesDataAPI/Web.Release.config
+/Website/SourceCode/Profiles/Profiles/bin
+/Website/SourceCode/Profiles/Profiles/Web.Debug.Config
+/Website/SourceCode/Profiles/Profiles/Web.QA.Config
+/Website/SourceCode/Profiles/Profiles/Web.Release.Config
+Database/Data/InstallData.xml
+Database/Data/MeSH.xml
+Database/ProfilesRNS_CreateSchema.sql
+/Website/SourceCode/Profiles/.vs
+Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/FolderProfile.pubxml
+Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesDEV.pubxml
+Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesDEV.pubxml.user
+Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesTEST.pubxml
+Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesTEST.pubxml.user
+Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/FolderProfile.pubxml

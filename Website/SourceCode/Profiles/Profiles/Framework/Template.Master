@@ -20,10 +20,11 @@
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
     <meta name="apple-mobile-web-app-title" content="Profiles RNS">
     <meta name="application-name" content="Profiles RNS">
-    <meta name="msapplication-TileColor" content="#a41c2f">
-    <meta name="theme-color" content="#a41c2f">
+    <meta name="msapplication-TileColor" content="#003594">
+    <meta name="theme-color" content="#003594">
 </head>
 <body id="bodyMaster" runat="server">
     <!-- Google Tag Manager (noscript) -->
@@ -47,10 +48,14 @@
             ga('b.send', 'pageview');
         </script>
         <div id='page-container'>
-    <div class="institutionHeader">
-     <%--  Changed top banner to PNG so transparent logos can be supported--%>
-        <img src="<%=GetURLDomain()%>/Framework/Images/banner.png" alt="Header Logo" />
-</div>
+
+        <div class="institutionHeader">
+            <a href="https://pitt.edu">
+                <img src="<%=GetURLDomain()%>/Framework/Images/banner-pitt.png" alt="University of Pittsburgh Profiles" />
+            </a> 
+            <span class="branding">Health Sciences Profiles</span>
+        </div>
+
             <div class="profiles">
                 <div class="profilesHeader" runat="server" id="divProfilesHeader">
                     <div class="panelHeader">
@@ -126,10 +131,43 @@
                 </div>
             </div>
             <%--Catalyst Footer--%>
-            <div style="margin-top: 32px;" id="catfooter">
+            <footer style="margin-top: 32px;" id="catfooter">
                 <%--<uc:CatalystAsset runat='server' AssetType="3" />--%>
-            </div>
+
+                    <p>
+                        Health Sciences Profiles is sponsored and maintained by 
+                        the <a href="https://ctsi.pitt.edu/">Clinical and Translational Science Institute</a> 
+                        and <a href="https://www.itarget.pitt.edu//">Health Sciences Information Technology</a>
+                        at the <a href="https://pitt.edu">University of Pittsburgh</a>.
+                    </p>
+                    <p>
+                        This site is running <a href="https://profiles.catalyst.harvard.edu/">Profiles RNS</a> <%=GetVersion()%> software.
+                    </p>
+            </footer>
         </div>
+
+        <% 
+            Int32 siteID = GetMatomoSiteID();
+            if (siteID > 0)
+            {
+        %>
+                <script type="text/javascript">
+                    var _paq = window._paq = window._paq || [];
+                    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                    _paq.push(['trackPageView']);
+                    _paq.push(['enableLinkTracking']);
+                    (function () {
+                        var u = "<%=GetMatomoURL()%>";
+                        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                        _paq.push(['setSiteId', '<%=siteID%>']);
+                        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                        g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+                    })();
+                </script>
+
+        <%
+            }
+        %>
     </form>
     <script type="text/javascript">
         $(document).ready(function () {

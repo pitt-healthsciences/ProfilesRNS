@@ -1,0 +1,54 @@
+
+/*  Pitt Style Cascades  */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Rubik|Merriweather&display=fallback");
+
+.institutionHeader {
+    background-color: #003594;
+    border-bottom-color: #FFB81C;
+}
+
+.institutionHeader > .branding {
+    color: white;
+    font-family: Rubik, Arial, sans-serif;
+    font-size: 3.5rem;
+    margin: 0 0 0 20px;
+    padding: 10px 0 0 20px;
+    border-left: 1px solid white;
+    position: relative;
+    top: 15px;
+}
+
+.profiles a.search-button {
+    background-color: #003594;
+    border-color: #003594;
+}
+
+.profiles a.search-button:hover {
+    box-shadow: 0 0 2px 2px #003594;
+}
+
+
+.profiles .login-button {
+    background-color: #FFB81C;
+    border-color: #003594;
+    color: #003594;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+}
+
+#prns-nav ul.prns-main li.landed,
+#prns-nav ul.prns-main li.landed a {
+    background-color: #FFB81C;
+    color: #003594;
+}
+
+footer {
+    max-width: 640px;
+    margin-inline: auto;
+    padding: 1rem;
+    font-size: small;
+    color: #444;
+    text-align: left;
+}
+
