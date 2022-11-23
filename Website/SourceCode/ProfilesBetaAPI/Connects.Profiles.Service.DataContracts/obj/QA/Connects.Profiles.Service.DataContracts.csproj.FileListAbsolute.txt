@@ -1,6 +1,0 @@
-D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.DataContracts\bin\QA\Connects.Profiles.Service.DataContracts.dll
-D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.DataContracts\bin\QA\Connects.Profiles.Service.DataContracts.pdb
-D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.DataContracts\obj\QA\Connects.Profiles.Service.DataContracts.csproj.AssemblyReference.cache
-D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.DataContracts\obj\QA\Connects.Profiles.Service.DataContracts.csproj.CoreCompileInputs.cache
-D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.DataContracts\obj\QA\Connects.Profiles.Service.DataContracts.dll
-D:\development\svchs\ProfilesRNS\Website\SourceCode\ProfilesBetaAPI\Connects.Profiles.Service.DataContracts\obj\QA\Connects.Profiles.Service.DataContracts.pdb
