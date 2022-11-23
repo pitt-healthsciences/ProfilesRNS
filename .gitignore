@@ -108,3 +108,5 @@ Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesDEV.pubx
 Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesTEST.pubxml
 Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/ProfilesTEST.pubxml.user
 Website/SourceCode/Profiles/Profiles/Properties/PublishProfiles/FolderProfile.pubxml
+*.dll
+*.pdb
