@@ -131,7 +131,8 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-#*.pubxml
+*.pubxml
+*.pubxml.user
 *.publishproj
 
 
@@ -147,3 +148,4 @@ PublishScripts/
 
 
 
+/Website/SourceCode/Profiles/Profiles/Web.Debug.Config
