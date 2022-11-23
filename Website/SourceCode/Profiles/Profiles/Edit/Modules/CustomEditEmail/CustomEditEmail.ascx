@@ -22,28 +22,51 @@
                     <div style="padding: 10px 0px;">
                         <asp:Panel runat="server" ID="pnlSecurityOptions">
                             <security:Options runat="server" ID="securityOptions"></security:Options>
-                        </asp:Panel>
+                        </asp:Panel>                    
+                        <asp:PlaceHolder ID="phEditButtons" runat="server">
+                            <div style="padding-bottom: 10px;">
+                                <asp:LinkButton ID="btnEditEmail" runat="server" OnClick="btnEditEmail_OnClick"
+                                    CssClass="profileHypLinks"><asp:Image runat="server" ID="btnImgEditEmail" AlternateText=" " ImageUrl="~/Framework/Images/icon_squareArrow.gif"/> 
+                                    &nbsp;Edit Email Address</asp:LinkButton>
+                            </div>
+                        </asp:PlaceHolder>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
                     <div class="editPage">
-                        <table width="100%">
-                            <tr class="topRow editTable">
-                                <td>
-                                    Email Address
-                                </td>
-                            </tr>
-                            <tr class="editTable">
-                                <td style="padding: 5px 10px">
-                                    <asp:Literal runat="server" ID="litEmailAddress"></asp:Literal>
-                                </td>
-                            </tr>
-                        </table>
-                           <br />
-                        <br />
-                         Email Address comes from an automatic data feed from Human Resources.
+                        <asp:PlaceHolder ID="phViewEmail" runat="server">
+                            <table width="100%">
+                                <tr class="topRow editTable">
+                                    <td>
+                                        Email Address
+                                    </td>
+                                </tr>
+                                <tr class="editTable">
+                                    <td style="padding: 5px 10px">
+                                        <asp:Literal runat="server" ID="litEmailAddress"></asp:Literal>
+                                    </td>
+                                </tr>
+                            </table>
+                        </asp:PlaceHolder>
+
+                        <asp:Panel ID="phEditEmail" CssClass="EditPanel" runat="server">
+                            <div style="background: yellow; padding: 0.5rem 1.75rem; margin-bottom: 1.5rem">
+                                Changes to email address take up to 24 hours to be added to your profile.
+                            </div>
+                            <div>
+                                <b>Email Address</b>
+                                <asp:TextBox ID="tbEmail" runat="server"  />
+                            </div>                            
+                            <div class="actionbuttons">
+                                <asp:LinkButton ID="btnSaveAndClose" runat="server" CausesValidation="False"
+                                    OnClick="btnSaveAndClose_OnClick" Text="Save" TabIndex="11" />
+                                <asp:Literal runat="server" ID="lblInsertResearcherRolePipe">&nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;</asp:Literal>
+                                <asp:LinkButton ID="btnCancel" runat="server" CausesValidation="False" OnClick="btnCancel_OnClick"
+                                    Text="Cancel" TabIndex="7" />
+                            </div>
+                        </asp:Panel>
                     </div>
                 </td>
             </tr>

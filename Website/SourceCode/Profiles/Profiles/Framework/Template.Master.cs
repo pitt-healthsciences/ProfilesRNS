@@ -169,78 +169,82 @@ namespace Profiles.Framework
 
                 foreach (Tab t in listtabs)
                 {
-                    if (t.URL != null)
+                    //[MAPS]
+                    if (t.Name != "Map")
                     {
-                        if (drawstart)
+                        if (t.URL != null)
                         {
-                            tabs.Append(Framework.Utilities.Tabs.DrawTabsStart());
-                            drawstart = false;
-                        }
-
-                        if (t.Active)
-                        {
-                            tabs.Append(Framework.Utilities.Tabs.DrawActiveTab(t.Name));
-                        }
-                        else if (Root.AbsolutePath.ToLower().Contains("display.aspx"))
-                        {
-                            string newtab = t.URL;
-
-                            t.URL = Root.AbsolutePath;
-
-                            t.URL = t.URL.ToLower().Replace("/display.aspx", "");
-
-                            if (!HttpContext.Current.Request.QueryString["subject"].IsNullOrEmpty())
-                                t.URL += "/" + HttpContext.Current.Request.QueryString["subject"].ToString();
-
-                            if (!HttpContext.Current.Request.QueryString["predicate"].IsNullOrEmpty())
-                                t.URL += "/" + HttpContext.Current.Request.QueryString["predicate"].ToString();
-
-                            if (!HttpContext.Current.Request.QueryString["object"].IsNullOrEmpty())
-                                t.URL += "/" + HttpContext.Current.Request.QueryString["object"].ToString();
-
-
-                            if (this.Tab != string.Empty)
+                            if (drawstart)
                             {
-                                t.URL = Root.Domain + t.URL + "/" + newtab;
+                                tabs.Append(Framework.Utilities.Tabs.DrawTabsStart());
+                                drawstart = false;
+                            }
+
+                            if (t.Active)
+                            {
+                                tabs.Append(Framework.Utilities.Tabs.DrawActiveTab(t.Name));
+                            }
+                            else if (Root.AbsolutePath.ToLower().Contains("display.aspx"))
+                            {
+                                string newtab = t.URL;
+
+                                t.URL = Root.AbsolutePath;
+
+                                t.URL = t.URL.ToLower().Replace("/display.aspx", "");
+
+                                if (!HttpContext.Current.Request.QueryString["subject"].IsNullOrEmpty())
+                                    t.URL += "/" + HttpContext.Current.Request.QueryString["subject"].ToString();
+
+                                if (!HttpContext.Current.Request.QueryString["predicate"].IsNullOrEmpty())
+                                    t.URL += "/" + HttpContext.Current.Request.QueryString["predicate"].ToString();
+
+                                if (!HttpContext.Current.Request.QueryString["object"].IsNullOrEmpty())
+                                    t.URL += "/" + HttpContext.Current.Request.QueryString["object"].ToString();
+
+
+                                if (this.Tab != string.Empty)
+                                {
+                                    t.URL = Root.Domain + t.URL + "/" + newtab;
+                                }
+                                else
+                                {
+                                    t.URL = Root.Domain + t.URL;
+                                }
+
+
+                                tabs.Append(Framework.Utilities.Tabs.DrawDisabledTab(t.Name, t.URL));
+
                             }
                             else
                             {
-                                t.URL = Root.Domain + t.URL;
-                            }
+                                //Then its a disabled tab
+                                if (this.Tab != string.Empty)
+                                {
+                                    string[] url = Root.AbsolutePath.Split('/');
+                                    string buffer = string.Empty;
 
+                                    if (url.Length == 2)
+                                    {
 
-                            tabs.Append(Framework.Utilities.Tabs.DrawDisabledTab(t.Name, t.URL));
+                                        t.URL = Root.Domain + Root.AbsolutePath + "/" + t.URL;
+                                    }
+                                    else
+                                    {
+                                        for (int i = 0; i < url.Length - 1; i++)
+                                            buffer = buffer + url[i] + "/";
 
-                        }
-                        else
-                        {
-                            //Then its a disabled tab
-                            if (this.Tab != string.Empty)
-                            {
-                                string[] url = Root.AbsolutePath.Split('/');
-                                string buffer = string.Empty;
+                                        t.URL = Root.Domain + buffer + t.URL;
+                                    }
 
-                                if (url.Length == 2)
+                                }
+                                else
                                 {
 
                                     t.URL = Root.Domain + Root.AbsolutePath + "/" + t.URL;
                                 }
-                                else
-                                {
-                                    for (int i = 0; i < url.Length - 1; i++)
-                                        buffer = buffer + url[i] + "/";
 
-                                    t.URL = Root.Domain + buffer + t.URL;
-                                }
-
+                                tabs.Append(Framework.Utilities.Tabs.DrawDisabledTab(t.Name, t.URL));
                             }
-                            else
-                            {
-
-                                t.URL = Root.Domain + Root.AbsolutePath + "/" + t.URL;
-                            }
-
-                            tabs.Append(Framework.Utilities.Tabs.DrawDisabledTab(t.Name, t.URL));
                         }
                     }
                 }
@@ -423,7 +427,7 @@ namespace Profiles.Framework
 
 
 
-                    _panels.Add(new Framework.Utilities.Panel(panels[i]));
+                        _panels.Add(new Framework.Utilities.Panel(panels[i]));
 
 
                 }

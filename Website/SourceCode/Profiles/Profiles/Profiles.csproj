@@ -120,6 +120,7 @@
     <Content Include="Edit\Modules\CustomEditSocialMediaPlugIns\EditFeaturedPresentations.ascx" />
     <Content Include="Edit\Modules\CustomEditSocialMediaPlugIns\EditFeaturedVideos.ascx" />
     <Content Include="Edit\Modules\CustomEditSocialMediaPlugIns\EditTwitter.ascx" />
+    <Content Include="Edit\Modules\CustomEditTelephone\CustomEditTelephone.ascx" />
     <Content Include="Edit\Modules\CustomEditWebsite\CustomEditWebsite.ascx" />
     <Content Include="Framework\CSS\hms-catalyst.css" />
     <Content Include="Framework\CSS\prns-theme-menus-top.css" />
@@ -449,6 +450,7 @@
     <Compile Include="Edit\Modules\CustomEditEducationalTraining\CustomEditEducationalTraining.ascx.designer.cs">
       <DependentUpon>CustomEditEducationalTraining.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Edit\Modules\CustomEditEmail\DataIO.cs" />
     <Compile Include="Edit\Modules\CustomEditFreetextKeyword\CustomEditFreetextKeyword.ascx.cs">
       <DependentUpon>CustomEditFreetextKeyword.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -491,6 +493,8 @@
     <Compile Include="Edit\Modules\CustomEditListProperty\CustomEditListProperty.ascx.designer.cs">
       <DependentUpon>CustomEditListProperty.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Edit\Modules\CustomEditMailingAddress\DataIO.cs" />
+    <Compile Include="Edit\Modules\CustomEditMailingAddress\MailingAddress.cs" />
     <Compile Include="Edit\Modules\CustomEditResearcherRole\CustomEditResearcherRole.ascx.cs">
       <DependentUpon>CustomEditResearcherRole.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -520,6 +524,14 @@
     <Compile Include="Edit\Modules\CustomEditSocialMediaPlugIns\EditTwitter.ascx.designer.cs">
       <DependentUpon>EditTwitter.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Edit\Modules\CustomEditTelephone\CustomEditTelephone.ascx.cs">
+      <DependentUpon>CustomEditTelephone.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\Modules\CustomEditTelephone\CustomEditTelephone.ascx.designer.cs">
+      <DependentUpon>CustomEditTelephone.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Modules\CustomEditTelephone\DataIO.cs" />
     <Compile Include="Edit\Modules\CustomEditWebsite\CustomEditWebsite.ascx.cs">
       <DependentUpon>CustomEditWebsite.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -30,7 +30,7 @@
             <div>
                 <asp:Literal ID="litMediaText" runat="server">
                                         Add links to news stories, blogs or other media that feature your research. Links can be hosted on any external site that is open to the public. 
-                                        Enter the title or headline as you want it to appear on your Harvard Catalyst Profiles page, and the related URL. Add a date of publication if applicable. 
+                                        Enter the title or headline as you want it to appear on your profile page, and the related URL. Add a date of publication if applicable. 
                                         Once you've added a story, remember to click "Save" below. 
                 </asp:Literal>
                 <asp:Literal ID="litWebsiteText" runat="server">

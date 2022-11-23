@@ -12,8 +12,10 @@
             <li class="tab" id="tab-view" style="cursor: pointer;" onclick="window.location='<%=string.Format("{0}/lists/default.aspx?type=view",Profiles.Framework.Utilities.Root.Domain)%>';">
                 <a href="<%=string.Format("{0}/lists/default.aspx?type=view",Profiles.Framework.Utilities.Root.Domain)%>">Manage List</a>
             </li>
+            <%--//[MAPS]
             <li class="tab" id="tab-map" style="cursor: pointer;" onclick="window.location='<%=string.Format("{0}/lists/default.aspx?type=map",Profiles.Framework.Utilities.Root.Domain)%>';">
                 <a href="<%=string.Format("{0}/lists/default.aspx?type=map",Profiles.Framework.Utilities.Root.Domain)%>">Map View</a> </li>
+            --%>
             <li class="tab" id="tab-coviz" style="cursor: pointer;" onclick="window.location='<%=string.Format("{0}/lists/default.aspx?type=coviz",Profiles.Framework.Utilities.Root.Domain)%>';">
                 <a href="<%=string.Format("{0}/lists/default.aspx?type=coviz",Profiles.Framework.Utilities.Root.Domain)%>">Cluster View</a> </li>
             <li class="tab" id="tab-summary" style="cursor: pointer;" onclick="window.location='<%=string.Format("{0}/lists/default.aspx?type=summary",Profiles.Framework.Utilities.Root.Domain)%>';">

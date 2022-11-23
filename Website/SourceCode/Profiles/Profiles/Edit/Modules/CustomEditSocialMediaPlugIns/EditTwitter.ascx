@@ -46,7 +46,7 @@
         <asp:Panel ID="pnlImportTwitter" runat="server" CssClass="EditPanel" Visible="false">
             <div>Attach Twitter Account</div>
             <div style="padding: 5px 0px 10px 0px;">
-                Display your most recent tweets from <a href="https://www.Twitter.com" target="_blank">Twitter.net</a> on your profile.  If you do not currently have a Twitter account, you can select one you follow.
+                Display your most recent tweets on your profile.
             </div>
             <div style="padding-top: 3px;">
                 <div>

@@ -18,6 +18,7 @@ using System.Configuration;
 using Profiles.Framework.Utilities;
 using System.DirectoryServices.AccountManagement;
 using System.DirectoryServices;
+using System.Web.UI.WebControls;
 
 namespace Profiles.Login.Utilities
 {
@@ -183,8 +184,14 @@ namespace Profiles.Login.Utilities
                 using (var pc = new PrincipalContext(ContextType.Domain, adDomain, user.UserName, user.Password))
                 {
                     UserPrincipal x = UserPrincipal.FindByIdentity(pc, IdentityType.SamAccountName, "PITT\\" + user.UserName);
-                    User result = new User();
-                    return ((DirectoryEntry)x.GetUnderlyingObject()).InvokeGet("employeeNumber").ToString();
+                    DirectoryEntry entry = (DirectoryEntry)x.GetUnderlyingObject();
+                    var props = entry.Properties;
+                    string employeeNumber = null;
+                    if (props.Contains("employeeNumber"))
+                    {
+                        employeeNumber = entry.Properties["employeeNumber"].Value.ToString();
+                    }
+                    return String.IsNullOrEmpty(employeeNumber) ? user.UserName : employeeNumber;
                 }
             } 
             else
