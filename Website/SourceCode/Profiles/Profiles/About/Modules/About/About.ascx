@@ -25,20 +25,21 @@
                             Research Networking Software website.
                         </div>
                     </p>
-                    <ul>
-                        <li style="padding-bottom: 10px"><b>Passive Networks</b> - Passive networks are formed
+                    <p style="padding-left: 15px">
+                        <b>Passive Networks</b> - Passive networks are formed
                             automatically when faculty share common traits such as being in the same department,
                             working in the same building, co-authoring the same paper, or researching the same
                             concepts or topics. A preview of a person's passive networks is shown on the right
-                            side of his or her profile.</li>
-                        <li><b>Active Networks</b> - Active networks are the ones that you define. When users
+                            side of his or her profile.
+                    </p>
+                    <p style="padding-left: 15px">
+                        <b>Active Networks</b> - Active networks are the ones that you define. When users
                             who login to the website view other people's profiles, they can mark those people
                             as collaborators, advisors, or advisees. In other words, you can build your own
                             network of people that you know. Currently, you can only see the networks that you
                             build. In the future you will be able to share these lists with others. Active networks
-                            are shown on your left sidebar.</li>
-                    </ul>
-                    <br />
+                            are shown on your left sidebar.
+                    </p>
                     <p>
                         <asp:Image runat="server" ID="imgNetworkIcon" alt=""/>
                         <u>Network Pages</u><br />
@@ -93,6 +94,34 @@
         </table>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnlFAQ" Visible="false">
+        <script>
+            $('.pageTitle > h2').text("Frequently Asked Questions");
+        </script>
+
+        
+        <% 
+            String supportURL = GetSupportURL();
+            if (! String.IsNullOrEmpty(supportURL))
+            {
+        %>
+            <div style="background-color: #E8F0FA; border: 1px solid #333; padding: 8px 24px 20px; margin-block: 16px;">
+                <h3 style="color: #333">SUPPORT DESK</h3>
+                <p>
+                    If your question is not answered below, consider getting help from one of our team members.  <br />
+                    For the quickest response, <a href="<%=supportURL%>">submit a service request</a>.
+                </p>
+                <p>
+                    Phone number: (412)&nbsp;648-2222 <br />
+                    Hours of operation: Monday through Friday, 8:30 am - 5:00 pm
+                </p>
+                <a href="<%=supportURL%>" class="search-button" style="padding: 5px 15px; background-image: none">
+                    Submit Service Request
+                </a>
+            </div>
+        <%
+            }
+        %>
+
         <h3>
             How do I edit my profile?
         </h3>

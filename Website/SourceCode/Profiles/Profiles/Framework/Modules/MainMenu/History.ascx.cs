@@ -33,7 +33,9 @@ namespace Profiles.Framework.Modules.MainMenu
             int count = 0;
 
             int total = uh.GetItems().Count;
-            lblHistoryItems.Text = "<li class='main-nav'><a href='" + Root.Domain + "/history'>History (" + total.ToString() + ")</a><ul class='drop'>";
+            lblHistoryItems.Text =
+                "<li class='main-nav'>" + //"<a href='" + Root.Domain + "/history'>History (" + total.ToString() + ")</a><ul class='drop'>";
+                "<a href='#'>History (" + total.ToString() + ")</a><ul class='drop'>";
             foreach (HistoryItem h in uh.GetItems(5))
             {                
                 lblHistoryItems.Text += "<li><a  style='border-left:1px solid #383737;border-right:1px solid #383737;' href='" + h.URI + "'>" + h.ItemLabel + "</a></li>";                

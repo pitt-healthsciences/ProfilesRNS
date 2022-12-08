@@ -58,7 +58,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=3.5.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="AjaxControlToolkit, Version=3.5.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Newtonsoft.Json.dll</HintPath>
@@ -2063,6 +2066,7 @@
     <Content Include="packages\Newtonsoft.Json.11.0.2\.signature.p7s" />
     <Content Include="packages\Newtonsoft.Json.11.0.2\LICENSE.md" />
     <Content Include="packages\Newtonsoft.Json.11.0.2\Newtonsoft.Json.11.0.2.nupkg" />
+    <None Include="packages.config" />
     <None Include="Profile\Modules\NetworkClusterFlash\scriptaculous\CHANGELOG" />
     <None Include="Profile\Modules\NetworkClusterFlash\scriptaculous\MIT-LICENSE" />
     <None Include="Profile\Modules\NetworkClusterFlash\scriptaculous\README.rdoc" />

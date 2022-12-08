@@ -139,6 +139,17 @@
                         the <a href="https://ctsi.pitt.edu/">Clinical and Translational Science Institute</a> 
                         and <a href="https://www.itarget.pitt.edu//">Health Sciences Information Technology</a>
                         at the <a href="https://pitt.edu">University of Pittsburgh</a>.
+                        <% 
+                            String supportURL = GetSupportURL();
+                            if (! String.IsNullOrEmpty(supportURL))
+                            {
+                        %>
+                                <a href="<%=supportURL%>" class="search-button" style="padding: 5px 15px; background-image: none">
+                                    Submit a service request.
+                                </a>
+                        <%
+                            }
+                        %>
                     </p>
                     <p>
                         This site is running <a href="https://profiles.catalyst.harvard.edu/">Profiles RNS</a> <%=GetVersion()%> software.

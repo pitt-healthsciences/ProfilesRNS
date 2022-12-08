@@ -9,6 +9,8 @@
                 <a href="<%=ResolveUrl("~/search")%>">Home</a>
             </li>
             <li class="main-nav">
+                 <a href="<%=ResolveUrl("~/about/default.aspx?tab=overview")%>">About</a>
+<%--
                 <a href='#'>About</a>
                 <ul class="drop">
                     <li>
@@ -21,6 +23,7 @@
                         <a id="orcid" style="border-left: 1px solid  #999; border-right: 1px solid  #999; border-bottom: 1px solid #999; width: 200px !important" href="<%=ResolveUrl("~/about/default.aspx?tab=orcid")%>">ORCID</a>
                     </li>
                 </ul>
+--%>
 
             </li>
             <li class="main-nav">
@@ -36,6 +39,7 @@
                 </ul>
             </li>--%>
             <HistoryItem:History runat="server" ID="ProfileHistory" Visible="true" />
+
             <li class="search main-nav" style="width: 492px;">
                 <input name="search" id="menu-search" placeholder="Search Profiles (people, publications, concepts, etc.)" type="text" style="padding-left: 5px;" />
                 <img style="cursor: pointer" alt="search" id="img-mag-glass" src="<%=ResolveUrl("~/framework/images/blackMagnifyGlass.png")%>" />

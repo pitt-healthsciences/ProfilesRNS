@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Xml;
 
 using Profiles.Framework.Utilities;
@@ -91,5 +92,11 @@ namespace Profiles.About.Modules.About
             imgVis.ImageUrl = Root.Domain + "/framework/images/about_visualizations.jpg";
 
         }
+
+        public String GetSupportURL()
+        {
+            return ConfigurationManager.AppSettings["Support.TicketURL"];
+        }
+
     }
 }
